@@ -10,7 +10,7 @@ $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
 $ pkg install yarn
 $ git clone https://github.com/THETAKU09/Taku-Bot-xD.git (si descargas el archivo zip: cd storage)
-$ cd INFINIXBOT-MD
+$ cd Taku-Bot-xD
 $ npm install NOTA: si aparece error "symlink" ejecutar: npm install --no-bin-links
 $ npm start
 ```
@@ -36,8 +36,8 @@ $ yarn install
 --Una vez instalados abre la terminal bash o en visual studio, y ejecuta los siguientes
 comandos: 
 ```bash 
-git clone https://github.com/OdinTm/INFINIXBOT-MD
-cd INFINIXBOT-MD
+git clone https://github.com/THETAKU09/Taku-Bot-xD
+cd Taku-Bot-xD
 npm install
 npm update
 npm start
