@@ -24,21 +24,5 @@ $ pkg install yarn -y
 $ yarn install
 ```
 ---------
-
-## INSTALAR EN WINDOWS (SI LO EDITARAS USA VISUAL STUDIO Y DEJA CREDITOS kkkk)
-
-** INSTALA LOS SIGUIENTES PROGRAMAS: 
-* Download And Install Git bash [`Click Here`](https://git-scm.com/downloads)
-* Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**No olvides agregar FFmpeg a las variables de entorno PATH**)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
-
---Una vez instalados abre la terminal bash o en visual studio, y ejecuta los siguientes
-comandos: 
-```bash 
-git clone https://github.com/THETAKU09/Taku-Bot-xD
-cd Taku-Bot-xD
-npm install
-npm update
-npm start
-
+### DISFRUTA DEL BOT 
+BY Taku-Bot-xD/Leonardo ;)
