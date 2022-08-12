@@ -1,48 +1,3 @@
-# INFINIX-BOT 2022 BY: @ODIN
-
-**BOT FUNCIONANDO CORRECTAMENTE EN LA APP OFICIAL
-DE WHATSAPP Y SU VERSION DE NEGOCIOS, NO SE GARANTIZA 
-QUE FUNCIONE CORRECTAMENTE EN APPS ALTERADAS/MODIFICADAS
-
-¡¡ Aun no se tiene una version estable de baileys MULTI-DEVICE, 
-por lo que se pueden presentar errores de conexion, si tienes un error
-actualiza desde la terminal usando npm update @adiwajshing/baileys@4.1.0,
-si aun continua el error ve al repositorio oficial de baileys y revisa
-que exista una actualizacion del error o puedes reportar el bug. De 
-igual manera si se detecto el error y encuentro solucion aqui mismo te 
-dare los detalles. 
-
-Nota: Este es mi primer bot que adapto 100% al español creditos de la
-base utlizada al final. *BOT SIN FINES DE LUCRO 100% GRATUITO SI
-EDITAS FAVOR DE NO AGREGAR SCRIP DE DONACIONES PUESTO QUE EL PROYECTO
-NO ESTA HECHO CON DICHO FIN*
-
-##Grupo Oficial de Whatsapp
-
-[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/C63fWed1OzRJtToqAptmB4) PROHIBIDO +212
-
-
-#### Deploy en Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/OdinTm/INFINIXBOT-MD)
-
-## SI FALLA EL DEPLOY
-
-[ PROBLEMAS DE GITHUB Y HEROKU ]
-```
-El bot es compatible para ejecutar las 24 horas del dia si asi lo deseas en heroku, sin embargo, en estos momentos existen
-problemas para conectar tu cuenta github a heroku, por lo que la solucion es hacer el deploy directamente de heroku CLI
-¿que es Heroku CLI?, es el sistema propio de heroku que te permite subir los archivos de tu proyecto directamente y 
-ejecutar desde la misma terminal sin la necesidad de crear un repositorio en linea, para ello puedes ver el siguiente 
-tutorial : https://www.youtube.com/watch?v=aUW5GAFhu6s
-```
----------
-
-#### Heroku Buildpack
-| BuildPack | LINK |
-|--------|--------|
-| **FFMPEG** |[here](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [here](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
-
 ### Ejecutar en termux
 1. Escribe asi como esta en la lista de orden cada comando para ejecutar en Termux
 ```sh
@@ -54,7 +9,7 @@ $ pkg install nodejs -y
 $ pkg install ffmpeg -y
 $ pkg install imagemagick -y
 $ pkg install yarn
-$ git clone https://github.com/OdinTm/INFINIXBOT-MD.git (si descargas el archivo zip: cd storage)
+$ git clone https://github.com/THETAKU09/Taku-Bot-xD.git (si descargas el archivo zip: cd storage)
 $ cd INFINIXBOT-MD
 $ npm install NOTA: si aparece error "symlink" ejecutar: npm install --no-bin-links
 $ npm start
@@ -86,17 +41,4 @@ cd INFINIXBOT-MD
 npm install
 npm update
 npm start
-```
-
-
-#### MIS AGRADECIMIENTOS ESPECIALES A:
-[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
-[![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
-
-
-## CREADOR Y PROPIETARIO DE ESTE BOT
-[![ODIN](https://github.com/OdinTm.png?size=100)](https://github.com/OdinTm)
-
-## INFINIX BOT 2022 BY: @Odin
-[![ODIN](https://i.ibb.co/NYsx0nw/Screenshot-3.jpg?size=300)](https://github.com/OdinTm/INFINIXBOT2022-MD)
 
