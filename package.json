@@ -1,5 +1,5 @@
 {
-    "name": "inifnix-bot",
+    "name": "Taku-Bot-xD",
     "version": "1.0",
     "description": "bot para whatsapp",
     "main": "index.js",
@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "node index.js",
-        "test": "node test.js",
+        "test" test.js",
         "test2": "nodemon index.js"
     },
     "keywords": [
@@ -20,7 +20,7 @@
         "whatsapp",
         "js-whatsapp",
         "whatsapp",
-        "inifnix-bot",
+        "Taku-Bot-xD",
         "wabot-aq",
         "multi-device",
         "MD",
@@ -28,7 +28,7 @@
     ],
     "homepage": "www.google.com",
     "author": {
-        "name": "OdinTm"
+        "name": "THETAKU09"
     },
     "repository": {
         "type": "git",
