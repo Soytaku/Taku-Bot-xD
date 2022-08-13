@@ -1,6 +1,6 @@
 {
   "users": {
-    "5214774739565@s.whatsapp.net": {
+    "5493772642151@s.whatsapp.net": {
       "exp": 1403,
       "limit": 100,
       "lastclaim": 0,
@@ -126,7 +126,7 @@
     }
   },
   "chats": {
-    "5214774739565@s.whatsapp.net": {
+    "5493772642151@s.whatsapp.net": {
       "isBanned": false,
       "welcome": false,
       "detect": false,
@@ -173,7 +173,7 @@
   "msgs": {},
   "sticker": {},
   "settings": {
-    "5215591619052@s.whatsapp.net": {
+    "5493772642151@s.whatsapp.net": {
       "self": false,
       "autoread": false,
       "restrict": false
