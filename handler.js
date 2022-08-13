@@ -482,16 +482,16 @@ export async function handler(chatUpdate) {
                 m.isCommand = true
                 let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Ganancia por comando
                 if (xp > 200)
-                    m.reply('XP bajo se mas activo -_-, toma el menú:') // Hehehe
+                    m.reply('XP bajo se mas activo Con Taku-Bot-xD') // Hehehe
                 else
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
-                    this.reply(m.chat, `🔻Sin limites para aplicar, usa #reclamarxp para comprar mas limites con el comando #buy <cantidad>
+                    this.reply(m.chat, `Te quedaste sin limites para aplicar, usa #reclamarxp para comprar mas limites Escribe el comando #buy <cantidad>
                     o #buyall para comprar todo lo posible de limites. Recuerda que solo puedes reclamarxp una ves al dia `, m)
                     continue // Límite vencido
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `🔷 Para ver tu nivel ${plugin.level} usa este comando. 🔷 Tu nivel actual: ${_user.level}`, m)
+                    this.reply(m.chat, `Para ver tu nivel ${plugin.level} usa este comando.  Tu nivel actual: ${_user.level}`, m)
                     continue // Si no se ha alcanzado el nivel
                 }
                 let extra = {
@@ -547,7 +547,7 @@ export async function handler(chatUpdate) {
                         }
                     }
                     if (m.limit)
-                        m.reply(+m.limit + ' Limite aplicado correctamente')
+                        m.reply(+m.limit + ' Limite aplicado correctamente [✔]')
                 }
                 break
             }
@@ -632,18 +632,18 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Bienvenido seas , @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
-                            (chat.sBye || this.bye || conn.bye || 'Adiós, @user!')).replace('@user', '@' + user.split('@')[0])
+                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Hola,👋 @user Bienvenido/A al Grupo/nEspero que te diviertas Mucho estando aqui😄).replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
+                            (chat.sBye || this.bye || conn.bye || 'Adiós, @user!\nQue tengas un Buen dia🌦️)).replace('@user', '@' + user.split('@')[0])
                         this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                     }
                 }
             }
             break
         case 'promote':
-            text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Ahora es administrador del grupo 🔺```')
+            text = (chat.sPromote || this.spromote || conn.spromote || 'Nuevo admins @user ```Felizidades🙌```')
         case 'demote':
             if (!text)
-                text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Ya no es administrador🔻```')
+                text = (chat.sDemote || this.sdemote || conn.sdemote || 'Oye @user ```Ya no eres administrador```')
             text = text.replace('@user', '@' + participants[0].split('@')[0])
             if (chat.detect)
                 this.sendMessage(id, { text, mentions: this.parseMention(text) })
@@ -663,10 +663,10 @@ export async function groupsUpdate(groupsUpdate) {
         if (!id) continue
         let chats = global.db.data.chats[id], text = ''
         if (!chats?.detect) continue
-        if (groupUpdate.desc) text = (chats.sDesc || this.sDesc || conn.sDesc || '`🔷La descripción ha sido cambiada correctamente a```\n@desc').replace('@desc', groupUpdate.desc)
-        if (groupUpdate.subject) text = (chats.sSubject || this.sSubject || conn.sSubject || '```🔷El asunto ha sido cambiado a```\n@subject').replace('@subject', groupUpdate.subject)
-        if (groupUpdate.icon) text = (chats.sIcon || this.sIcon || conn.sIcon || '```🔷El icono se ha cambiado a ```').replace('@icon', groupUpdate.icon)
-        if (groupUpdate.revoke) text = (chats.sRevoke || this.sRevoke || conn.sRevoke || '```🔷El enlace del grupo se ha cambiado a```\n@revoke').replace('@revoke', groupUpdate.revoke)
+        if (groupUpdate.desc) text = (chats.sDesc || this.sDesc || conn.sDesc || '`descripción cambiada correctamente [✔] ```\n@desc').replace('@desc', groupUpdate.desc)
+        if (groupUpdate.subject) text = (chats.sSubject || this.sSubject || conn.sSubject || '```asunto cambiado correctamente [✔] ```\n@subject').replace('@subject', groupUpdate.subject)
+        if (groupUpdate.icon) text = (chats.sIcon || this.sIcon || conn.sIcon || '```icono se ha cambiado [✔] ```').replace('@icon', groupUpdate.icon)
+        if (groupUpdate.revoke) text = (chats.sRevoke || this.sRevoke || conn.sRevoke || '```enlace del grupo se ha cambiado Correctamente [✔] ```\n@revoke').replace('@revoke', groupUpdate.revoke)
         if (!text) continue
         await this.sendMessage(id, { text, mentions: this.parseMention(text) })
     }
@@ -698,16 +698,16 @@ Mensaje @${participant.split`@`[0]} detectado eliminado❗
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '🔹Este comando solo puede ser utilizado por el _*DESARROLLADOR*_ del bot ❗',
-        owner: '🔹Este comando solo puede ser utilizado por _*Propietario del Bot*_❗',
-        mods: '🔹Este comando solo puede ser utilizado por un _*Moderador*_ del bot❗ ',
-        premium: '🔹Este comando es solo para miembros _*Premium*_❗',
-        group: '🔹Este comando solo se puede usar en grupos❗',
-        private: '🔹Este comando solo se puede usar en el chat privado❗',
-        admin: '🔹Este comando  solo puede ser usado por un  *Admin* del grupo❗',
-        botAdmin: '🔹Haga que el bot sea un * Admin * para usar este comando❗',
-        unreg: '🔹Regístrese para usar esta función escribiendo:\n\n*#registrar nombre.edad*\n\nEjemplo: *#registrar odin.20*',
-        restrict: '🔹Esta característica en *disable*!'
+        rowner: '[❗] Este comando solo puede ser utilizado por el _*DESARROLLADOR*_ del bot* ,
+        owner: '[❗]Este comando solo puede ser utilizado por _*Propietario del Bot*_',
+        mods: '[❗]Este comando solo puede ser utilizado por un _*Moderador*_ del bot ',
+        premium: '[❗]Este comando es solo para miembros _*Premium*_',
+        group: '[❗]Este comando solo se puede usar en grupos',
+        private: '[❗]Este comando solo se puede usar en el chat privado',
+        admin: '[❗]Este comando  solo puede ser usado por un  *Admin* del grupo',
+        botAdmin: '[❗]Haga que el bot sea un * Admin * para usar este comando',
+        unreg: 'Regístrese para usar esta función escribiendo:\n\n*#registrar nombre.edad*\n\nEjemplo: *#registrar Leo.14*',
+        restrict: 'Esta característica en *disable*!'
     }[type]
     if (msg) return m.reply(msg)
 }
