@@ -29,11 +29,5 @@ $ npm start
 3. Escanea el codigo QR desde un segundo dispositivo, o si tienes PC puedes tomar captura enviarla al WhatsApp web y desde ahi escanear el QR. (Ve a whatsapp > Disposivos vinculados > Pulsa en `Multi Device` > Pulsa en `Vincular Dispositivo`)
 4. Disfruta del bot
 
-#### If npm install failed, try using yarn instead of npm
-```sh
-$ pkg install yarn -y
-$ yarn install
-```
----------
 ### DISFRUTA DEL BOT 
 BY Taku-Bot-xD/Leonardo ;)
