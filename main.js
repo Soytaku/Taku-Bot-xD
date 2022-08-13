@@ -160,14 +160,14 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '🔷¡Hola, @user!\nBienvenido al grupo espero y la pases de lo mejor!😉'
-  conn.bye = '🔷Adiós @user! que te vaya bien y tengas muchos hijos🥵 '
-  conn.spromote = '🔷@user ahora administrador del grupo! 🔺'
-  conn.sdemote = '🔷@user ya no es admin por gay!🔻' 
-  conn.sDesc = '🔷La descripción ha sido cambiada a\n@desc'
-  conn.sSubject = '🔷El título del grupo ha sido cambiado a \n@subject'
-  conn.sIcon = '🔷¡El icono del grupo ha sido cambiado!'
-  conn.sRevoke = '🔷El enlace del grupo ha sido cambiado a \n@revoke'
+  conn.welcome = '*¡Hola👋, @user!\nBienvenido/A🍷 al grupo,\nespero que te diviertas🥳 mucho estando aca!*🍭
+  conn.bye = '*Adiós @user!\nno vuelvas por favor\n😹👋\nespero que te muerda un perro*\n🐕💨'
+  conn.spromote = '*🤩🥳\nNuevo Admins @user\nFelizidades eres el nuevo admins del grupo!😎*'
+  conn.sdemote = '*Un admins menos @user XD👋*'
+  conn.sDesc = '*La descripción ya fue cambiada correctamente [✔]\nNueva Descripción*\n@desc'
+  conn.sSubject = '*Titulo del grupo cambiado correctamente [✔]\nNuevo Titulo*\n@subject'
+  conn.sIcon = '*¡El icono del grupo ha sido cambiado [✔]*'
+  conn.sRevoke = 'Link del Grupo cambiado Correctamente [✔]\nNuevo Link\n@revoke'
   conn.handler = handler.handler.bind(global.conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
