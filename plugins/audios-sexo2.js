@@ -11,7 +11,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = ['secso', 'setso']
 handler.command = new RegExp
-handler.help = ['ꜱᴇᴄꜱᴏ']
+handler.help = ['sexo 2']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
