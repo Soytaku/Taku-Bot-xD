@@ -3,7 +3,7 @@ import { ffmpeg } from '../lib/converter.js'
 let handler = async (m, { conn }) => {
     if (!m.quoted) throw 'Reply sticker or audio!'
     let mime = m.quoted.mimetype || ''
-    if (!/webp|audio/.test(mime)) throw '¡Responder al sticker o audio!'
+    if (!/webp|audio/.test(mime)) throw '*[❗] 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴𝚁 𝙰𝙻 𝚂𝚃𝙸𝙲𝙺𝙴𝚁 𝙾 𝙰𝚄𝙳𝙸𝙾*'
     let media = await m.quoted.download()
     let out = Buffer.alloc(0)
     if (/webp/.test(mime)) {
@@ -17,9 +17,9 @@ let handler = async (m, { conn }) => {
             '-shortest'
         ], 'mp3', 'mp4')
     }
-    await conn.sendFile(m.chat, out, 'out.mp4', 'ᴛᴏᴍᴀ ᴛᴜ ᴠɪᴅᴇᴏ ᴍᴀꜱᴛᴇʀ 🛡', null, m)
+    await conn.sendFile(m.chat, out, 'out.mp4', '*𝙰𝚀𝚄𝙸 𝚃𝙸𝙴𝙽𝙴𝚂 𝚃𝚄 𝚅𝙸𝙳𝙴𝙾*', null, m)
 }
-handler.help = ['ᴛᴏᴠɪᴅᴇᴏ (ʀᴇꜱᴘᴏɴᴅᴇ)']
+handler.help = ['tovideo (responde)']
 handler.tags = ['herramientas']
 
 handler.command = ['tovideo']
