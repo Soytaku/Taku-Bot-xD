@@ -31,11 +31,11 @@ conn.sendFile(m.chat, buff, ran, null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })})
-} else throw `*[NOTA]🔹Para usar este comando responde a una nota de voz o audio usando:  ${usedPrefix + command}*`
+} else throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙿𝙰𝚁𝙰 𝚄𝚂𝙰𝚁 𝙴𝚂𝚃𝙴 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝚄𝙽 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉:*  ${usedPrefix + command}*`
 } catch (e) {
 throw e
 }}
-handler.help = ['ʙᴀꜱꜱ', 'ʙʟᴏᴡɴ', 'ᴅᴇᴇᴘ', 'ᴇᴀʀʀᴀᴘᴇ', 'ꜰᴀꜱᴛ', 'ꜰᴀᴛ', 'ɴɪɢʜᴛᴄᴏʀᴇ', 'ʀᴇᴠᴇʀꜱᴇ', 'ʀᴏʙᴏᴛ', 'ꜱʟᴏᴡ', 'ꜱᴍᴏᴏᴛʜ', 'ᴛᴜᴘᴀɪ'].map(v => v + ' [etiqueta]')
+handler.help = ['bass', 'blown', 'deep', 'earrape', 'fast', 'fat', 'nightcore', 'reverse', 'robot', 'slow', 'smooth', 'tupai'].map(v => v + ' [etiqueta]')
 handler.tags = ['audio mod']
 handler.command = /^(bass|blown|deep|earrape|fas?t|nightcore|reverse|robot|slow|smooth|tupai|squirrel|chipmunk)$/i
 export default handler
