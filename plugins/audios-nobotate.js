@@ -9,7 +9,7 @@ type: 'audioMessage', // paksa tanpa convert di ffmpeg
 ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 })
 }
-handler.help = ['ꜱᴇxᴏ']
+handler.help = ['sexo']
 handler.tags = ['audios']
 handler.customPrefix =["no botate alv", "vete alv", "NO BOTATE ALV", "VETE ALV"]
 handler.command = new RegExp
