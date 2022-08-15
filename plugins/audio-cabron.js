@@ -9,7 +9,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /buscando un cabron|cabron/i
 handler.command = new RegExp
-handler.help = ['ᴄᴀʙʀᴏɴ']
+handler.help = ['cabron']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
