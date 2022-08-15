@@ -9,7 +9,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /gemidos|gmi2|rico|sexy|/i
 handler.command = new RegExp
-handler.help = ['ɢᴇᴍɪᴅᴏꜱ ']
+handler.help = ['gemidos']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
