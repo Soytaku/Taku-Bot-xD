@@ -11,7 +11,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /cunumi|una cunumi/i
 handler.command = new RegExp
-handler.help = ['ᴄᴜɴᴜᴍɪ']
+handler.help = ['cunumi']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
