@@ -9,7 +9,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /wtf|quien es|quien eres|y este|desconocido/i
 handler.command = new RegExp
-handler.help = ['ᴡᴛꜰ ʏ ᴇꜱᴛᴇ','**COMANDOS SIN #**']
+handler.help = ['wtf y este','**COMANDOS SIN #**']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
