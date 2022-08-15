@@ -9,7 +9,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 handler.customPrefix = /linda|perra|hermosa/i
 handler.command = new RegExp
 
-handler.help = ['ʟɪɴᴅᴀ']
+handler.help = ['linda']
 handler.tags = ['audios']
 
 handler.fail = null
