@@ -8,7 +8,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /ya antojaron|antojarooon|antojar|/i
 handler.command = new RegExp
-handler.help = ['ʏᴀ ᴀɴᴛᴏᴊᴀʀᴏɴ']
+handler.help = ['ya antojaron']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
