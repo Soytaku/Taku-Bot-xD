@@ -1,16 +1,17 @@
 
 import util from 'util'
 import path from 'path'
+
 let handler = async (m, { conn }) => {
-let vn = './media/manden porno.mp3'
-conn.sendFile(m.chat, vn, 'manden porno.mp3', null, m, true, {
+let vn = './media/me vengo.mp3'
+conn.sendFile(m.chat, vn, 'me vengo.mp3', null, m, true, {
 type: 'audioMessage', // paksa tanpa convert di ffmpeg
 ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 })
 }
-handler.customPrefix = /manden porno|desviando tema|porno/i
+handler.customPrefix = /oh me vengo|me vengoooo|ooo me vengoo/i
 handler.command = new RegExp
-handler.help = ['manden porno']
+handler.help = ['oh me vengo']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
