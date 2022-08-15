@@ -160,14 +160,14 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '*¡Hola👋, @user!\nBienvenido/A🍷 al grupo,\nespero que te diviertas🥳 mucho estando aca!*🍭
-  conn.bye = '*Adiós @user!\nno vuelvas por favor\n😹👋\nespero que te muerda un perro*\n🐕💨'
-  conn.spromote = '*🤩🥳\nNuevo Admins @user\nFelizidades eres el nuevo admins del grupo!😎*'
-  conn.sdemote = '*Un admins menos @user XD👋*'
-  conn.sDesc = '*La descripción ya fue cambiada correctamente [✔]\nNueva Descripción*\n@desc'
-  conn.sSubject = '*Titulo del grupo cambiado correctamente [✔]\nNuevo Titulo*\n@subject'
-  conn.sIcon = '*¡El icono del grupo ha sido cambiado [✔]*'
-  conn.sRevoke = 'Link del Grupo cambiado Correctamente [✔]\nNuevo Link\n@revoke'
+  conn.welcome = '╔══════════════*\n*╟❧ @subject*\n*╓▱▱▱▱▱▱⛩️▱▱▱▱▱▱╖*\n*╟❧ @user*\n*║𖣴⋗𝙷𝙾𝙻𝙰𝙰!!, 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙷𝙸𝚂 𝙶𝚁𝙾𝚄𝙿!🤩* \n*🍡*\n*║𖣴⋗ 😄𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝙻𝙴𝙴 𝙻𝙰𝚂 𝚁𝙴𝙶𝙻𝙰𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙿𝙰𝚁𝙰 𝙽𝙾 𝚃𝙴𝙽𝙴𝚁 𝙿𝚁𝙾𝙱𝙻𝙴𝙼𝙰𝚂 𝙲𝙾𝙽 𝙻𝙾𝚂 𝙰𝙳𝙼𝙸𝙽𝚂🧐:*\n*║𖣴⋗* @desc\n*🍻*\n*║𖣴⋗ 🍫𝙴𝚂𝙿𝙴𝚁𝙾 𝚀𝚄𝙴 𝚃𝙴 𝙳𝙸𝚅𝙸𝙴𝚁𝚃𝙰𝚂 𝙴𝚂𝚃𝙰𝙽𝙳𝙾 𝙼𝚄𝙲𝙷𝙾 𝙰𝙲𝙰 :D🍭*\n*╙▱▱▱▱▱▱ 〄 ▱▱▱▱▱▱╜'
+conn.bye = '*╭┅┅┅┄┄《🐼》┄┄┉┉*\n*║┣᪥҈⫸ @user*\n*║┣᪥҈⫸ 👋🏻𝙶𝙾𝙾𝙳 𝙱𝚈𝙴, 𝙴𝚂𝙿𝙴𝚁𝙾 𝚀𝚄𝙴 𝚃𝙴 𝙼𝚄𝙴𝚁𝙳𝙰 𝚄𝙽 𝙿𝙴𝚁𝚁𝙾🐕💨* \n*╰┅┅┉┄┄《🐼》┄┄┉┉*'
+conn.spromote = '*@user :D 𝙽𝚄𝙴𝚅𝙾 𝙰𝙳𝙼𝙸𝙽𝚂!!, 𝙵𝙴𝙻𝙸𝙲𝙸𝙳𝙰𝙳𝙴𝚂🥳*'
+conn.sdemote = '*@user 𝚈𝙰 𝙽𝙾 𝙴𝚁𝙴𝚂 𝙰𝙳𝙼𝙸𝚂 :(*'
+conn.sDesc = '*[✔] 𝚂𝙴 𝙰 𝙲𝙰𝙼𝙱𝙸𝙰𝙳𝙾 𝙻𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾*\n\n*𝙽𝚄𝙴𝚅𝙰 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:* @desc'
+conn.sSubject = '*😎𝚂𝙴 𝙷𝙰 𝙼𝙾𝙳𝙸𝙵𝙸𝙲𝙰𝙳𝙾 𝙴𝙻 𝙽𝙾𝙼𝙱𝚁𝙴 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾🍷*\n*𝙽𝚄𝙴𝚅𝙾 𝙽𝙾𝙼𝙱𝚁𝙴:* @subject'
+conn.sIcon = '*😉𝙵𝙾𝚃𝙾 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙲𝙰𝙼𝙱𝙸𝙰𝙳𝙾 𝙲𝙾𝚁𝚁𝙴𝙲𝚃𝙰𝙼𝙴𝙽𝚃𝙴 [✔]*'
+conn.sRevoke = '*🫡𝙻𝙸𝙽𝙺 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙲𝙰𝙼𝙱𝙸𝙰𝙳𝙾 [✔]*\n*𝙻𝙸𝙽𝙺 𝙽𝚄𝙴𝚅𝙾:* @revoke'
   conn.handler = handler.handler.bind(global.conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(global.conn)
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
