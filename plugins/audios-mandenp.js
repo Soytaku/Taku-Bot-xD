@@ -10,7 +10,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /manden porno|desviando tema|porno/i
 handler.command = new RegExp
-handler.help = ['ᴍᴀɴᴅᴇɴ ᴘᴏʀɴᴏ']
+handler.help = ['manden porno']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
