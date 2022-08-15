@@ -10,7 +10,7 @@ type: 'audioMessage', // paksa tanpa convert di ffmpeg
 ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 })
 }
-handler.help = ['ʜᴏʟᴀ']
+handler.help = ['Hola']
 handler.tags = ['audios']
 handler.customPrefix =/^(hola|HOLA|oLA|Hi|hi|Hola|Ola|ola\?)$/i
 handler.command = new RegExp
