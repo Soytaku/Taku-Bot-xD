@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "node index.js",
-        "test" test.js",
+        "test": "node test.js",
         "test2": "nodemon index.js"
     },
     "keywords": [
@@ -39,7 +39,7 @@
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
-        "@adiwajshing/baileys": "github:/OdinTm/baileys2",
+        "@adiwajshing/baileys": "github:/THETAKU09/baileys2",
         "@bochilteam/scraper": "^2.0.0",
         "awesome-phonenumber": "^2.68.0",
         "axios": "^0.24.0",
