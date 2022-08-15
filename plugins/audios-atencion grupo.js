@@ -9,7 +9,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /atencion grupo|Atencion grupo|ATENCIÒN|AVISO IMPORTANTE|Atención grupo/i
 handler.command = new RegExp
-handler.help = ['ᴀᴛᴇɴᴄɪᴏɴ ɢʀᴜᴘᴏ' ]
+handler.help = ['atencion grupo' ]
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
