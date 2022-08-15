@@ -8,7 +8,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /duro2|duro 2 horas|haciendolo|bien rico|favorito/i
 handler.command = new RegExp
-handler.help = ['ᴅᴜʀᴏ 2 ʜᴏʀᴀꜱ']
+handler.help = ['duro 2 horas']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
