@@ -11,7 +11,7 @@ handler.customPrefix = /^(ara ara|ara|ARA|ARA ARA\?)$/i
 handler.command = new RegExp
 
 
-handler.help = ['ᴀʀᴀ ᴀʀᴀ']
+handler.help = ['ara ara']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
