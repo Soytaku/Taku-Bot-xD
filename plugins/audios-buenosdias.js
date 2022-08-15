@@ -13,7 +13,7 @@ ptt: true // true diatas ga work, sebab dipaksa tanpa convert ;v
 }
 handler.customPrefix = /buenos dias|buen dia|buenos/i
 handler.command = new RegExp
-handler.help = ['ʙᴜᴇɴᴏꜱ ᴅɪᴀꜱ']
+handler.help = ['Buenos dias']
 handler.tags = ['audios']
 handler.fail = null
 handler.exp = 100
