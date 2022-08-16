@@ -23,18 +23,18 @@ export async function participantsUpdate({ id, participants, action }) {
                        pp = await this.profilePictureUrl(user, 'image')
                    } catch (e) {
                    } finally {
-                       text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || '🔹Bienvenido seas , @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
-                           (chat.sBye || this.bye || conn.bye || '🔹Adiós, @user!')).replace('@user', '@' + user.split('@')[0])
+                       text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || ' *𝙷𝚘𝚕𝚊𝚊,!!✨👋🏻 @user 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾/𝙰 𝚊𝚕 𝚐𝚛𝚞𝚙𝚘!!🥳*').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
+                           (chat.sBye || this.bye || conn.bye || ' *𝙰𝚂𝚃𝙰 𝙻𝙰 𝚅𝙸𝚂𝚃𝙰 @user 𝙱𝙰𝙱𝚈👋🏻*')).replace('@user', '@' + user.split('@')[0])
                        this.sendFile(id, pp, 'pp.jpg', text, null, false, { mentions: [user] })
                    }
                }
            }
            break
        case 'promote':
-           text = (chat.sPromote || this.spromote || conn.spromote || '@user ```Ahora es administrador del grupo 🔺```')
+           text = (chat.sPromote || this.spromote || conn.spromote || ' *𝙰𝚃𝙴𝙽𝙲𝙸𝙾𝙽!!📣 @user 𝙰𝙷𝙾𝚁𝙰 𝙴𝚂 𝙰𝙳𝙼𝙸𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾👑*')
        case 'demote':
            if (!text)
-               text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```Ya no es administrador🔻```')
+               text = (chat.sDemote || this.sdemote || conn.sdemote || ' *𝙾𝙷 𝙽𝙾,!!😬 @user 𝚈𝙰 𝙽𝙾 𝙴𝚁𝙴𝚂 𝙰𝙳𝙼𝙸𝙽𝚂*')
            text = text.replace('@user', '@' + participants[0].split('@')[0])
            if (chat.detect)
                this.sendMessage(id, { text, mentions: this.parseMention(text) })
