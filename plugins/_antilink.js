@@ -1,33 +1,21 @@
-import fetch from 'node-fetch'
-let handler = async (m, { conn, command }) => {
-if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '*[❗] 𝙻𝙾𝚂 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 +𝟷𝟾 𝙴𝚂𝚃𝙰𝙽 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾𝚂 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾, 𝚂𝙸 𝙴𝚂 𝙰𝙳𝙼𝙸𝙽 𝚈 𝙳𝙴𝚂𝙴𝙰 𝙰𝙲𝚃𝙸𝚅𝙰𝚁𝙻𝙾𝚂 𝚄𝚂𝙴 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #enable modohorny*'
-let url = packmen[Math.floor(Math.random() * packmen.length)]
-conn.sendButton(m.chat, `_🥵 Pack 3 🥵_`, author, url, [['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/${command}`]], m)
-}
-handler.help = ['pack3']
-handler.tags = ['internet']
-handler.command = /^(pack3)$/i
-export default handler
+const linkRegex = /chat.whatsapp.com\/(?:invite\/)?([0-9A-Za-z]{20,24})/i
+export async function before(m, { isAdmin, isBotAdmin }) {
+    if (m.isBaileys && m.fromMe)
+        return !0
+    if (!m.isGroup) return !1
+    let chat = global.db.data.chats[m.chat]
+    let bot = global.db.data.settings[this.user.jid] || {}
+    const isGroupLink = linkRegex.exec(m.text)
 
-global.packmen = [
-  "https://i.imgur.com/TK0qLAu.jpg",
-  "https://i.imgur.com/q8lKT40.jpg",
-  "https://i.imgur.com/OwWdL9u.jpg",
-  "https://i.imgur.com/Er7WiQo.jpg",
-  "https://i.imgur.com/u4y0q4P.jpg",
-  "https://i.imgur.com/y8y4PPr.jpg",
-  "https://i.imgur.com/qgfLlRY.jpg",
-  "https://i.imgur.com/irgyUTD.jpg",
-  "https://i.imgur.com/uXrqfBl.jpg",
-  "https://i.imgur.com/lgXjetf.jpg",
-  "https://i.imgur.com/81QLh8s.jpg",
-  "https://i.imgur.com/R3AlYe1.jpg",
-  "https://i.imgur.com/a2Myr3F.jpg",
-  "https://i.imgur.com/Wp9cgGw.jpg",
-  "https://i.imgur.com/ggKUnxt.jpg",
-  "https://i.imgur.com/eCJNWBl.jpg",
-  "https://i.imgur.com/6lcrBQB.jpg",
-  "https://i.imgur.com/eSSbXJ1.jpg",
-  "https://i.imgur.com/tNyvzyO.jpg"
-]
-//Creditos al Bot mystic :D
+    if (chat.antiLink && isGroupLink && !isAdmin) {
+        if (isBotAdmin) {
+            const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
+            if (m.text.includes(linkThisGroup)) return !0
+        }
+        await conn.sendButton(m.chat, `*[❗] 𝙻𝙸𝙽𝙺 𝙳𝙴𝚃𝙴𝙲𝚃𝙰𝙳𝙾!!*${isBotAdmin ? '' : '\n\nʟᴏ sɪᴇɴᴛᴏ, ᴇʟ ʙᴏᴛ ᴅᴇʙᴇ sᴇʀ ᴀᴅᴍɪɴɪsᴛʀᴀᴅᴏʀ ᴅᴇʟ ɢʀᴜᴘᴏ ᴘᴀʀᴀ ᴇʟɪᴍɪɴᴀʀ ☑. '}`, author, ['✘𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 𝙰𝙽𝚃𝙸𝙻𝙸𝙽𝙺✘', '/disable antilink'], m)
+        if (isBotAdmin && bot.restrict) {
+            await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+        } else if (!bot.restrict) return m.reply('‼𝙴𝚛𝚛𝚘𝚛, 𝚎𝚕 𝚙𝚛𝚘𝚙𝚒𝚎𝚝𝚊𝚛𝚒𝚘 𝚝𝚒𝚎𝚗𝚎 𝚍𝚎𝚜𝚊𝚌𝚝𝚒𝚟𝚊𝚍𝚘 #restrict, 𝚙𝚊𝚛𝚊 𝚊𝚌𝚝𝚒𝚟𝚊𝚛 𝚎𝚜𝚌𝚛𝚒𝚋𝚎 #enable restrict o #sistemas')
+    }
+    return !0
+}
