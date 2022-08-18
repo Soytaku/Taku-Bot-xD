@@ -33,7 +33,7 @@ $ npm start
 4. Disfruta del bot
 
 ### DISFRUTA DEL BOT 
-BY Taku-Bot-xD/Leonardo ;)
+BY Taku-Bot-xD/Taku ;)
 
 <p align="center">
 <img src="./media/soytaku.jpg" width="140" height="140"/>
