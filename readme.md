@@ -34,3 +34,8 @@ $ npm start
 
 ### DISFRUTA DEL BOT 
 BY Taku-Bot-xD/Leonardo ;)
+
+<p align="center">
+<img src="./media/soytaku.jpg" width="140" height="140"/>
+<p align="center">
+
