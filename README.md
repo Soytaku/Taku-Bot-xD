@@ -12,7 +12,8 @@
 <a href="https://chat.whatsapp.com/HmHiPZqDyCZKuCJC2nuUkq" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a>
 >LOS GRUPOS SON DE SOPORTE PERO TAMBIEN PUEDES ASER USO AL BOT.
->BOTS DE WHATSAPP ESTA PERMITIDO EN ESTOS GRUPOS :D
+
+>CUALQUIER BOT DE WHATSAPP ESTA PERMITIDO EN ES LOS GRUPOS :D
 
 ### Ejecutar en termux
 1. Escribe asi como esta en la lista de orden cada comando para ejecutar en Termux
