@@ -5,7 +5,7 @@
 
 ### `CONTACTO [NO BOT]`
 <a href="http://wa.me/5493772642151" target="blank"><img src="https://img.shields.io/badge/TAKU_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-### `GRUPO DE SOPORTE`
+### `GRUPOS DE SOPORTE`
 
 <a href="https://chat.whatsapp.com/BVYbhiEXHzT2gTJXmfZC98" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </a> 
