@@ -13,7 +13,7 @@
 </a>
 >LOS GRUPOS SON DE SOPORTE PERO TAMBIEN PUEDES ASER USO AL BOT.
 
->CUALQUIER BOT DE WHATSAPP ESTA PERMITIDO EN ES LOS GRUPOS :D
+>CUALQUIER BOT DE WHATSAPP ESTA PERMITIDO EN LOS GRUPOS :D
 
 ### Ejecutar en termux
 1. Escribe asi como esta en la lista de orden cada comando para ejecutar en Termux
