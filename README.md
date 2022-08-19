@@ -3,14 +3,15 @@
 <p align="center">
 
 
-### `CONTACTO`
+### `CONTACTO [NO BOT]`
 <a href="http://wa.me/5493772642151" target="blank"><img src="https://img.shields.io/badge/TAKU_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="http://wa.me/5493772642252"
 ### `GRUPO DE SOPORTE`
-<a href="https://chat.whatsapp.com/BVYbhiEXHzT2gTJXmfZC98" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-</a>
-> EL NUMERO NO ES BOT Y EN EL GRUPO SE PERMIRA BOT SOLO SI EL BOT NO ESTA CONECTADO
 
+<a href="https://chat.whatsapp.com/BVYbhiEXHzT2gTJXmfZC98" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</a> 
+<a href="https://chat.whatsapp.com/HmHiPZqDyCZKuCJC2nuUkq" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</a>
+>LOS GRUPOS SON DE SOPORTE PERO TAMBIEN PUEDES USAR EL BOT, BOTS DE WHATSAPP ESTA PERMITIDO EN ESTOS GRUPOS :D
 
 ### Ejecutar en termux
 1. Escribe asi como esta en la lista de orden cada comando para ejecutar en Termux
